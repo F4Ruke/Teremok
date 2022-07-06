@@ -1,0 +1,3 @@
+# Teremok
+
+Tutorial django project
