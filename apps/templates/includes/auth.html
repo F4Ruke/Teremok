@@ -1,0 +1,17 @@
+<form class="d-flex">
+    <ul class="navbar-nav me-auto">
+        {% if request.user.is_authenticated %}
+            <li class="nav-item text-white">
+                {{ user.username }} |
+                <a href="{% url 'logout' %}" class="btn btn-outline-light me-2">Выйти</a>
+            </li>
+        {% else %}
+            <li class="nav-item">
+               <a href="{% url 'login' %}" class="btn btn-outline-light me-2">Войти</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'singup' %}" class="btn btn-outline-light">Регистрация</a>
+            </li>
+        {% endif %}
+    </ul>
+</form>

@@ -1,0 +1,7 @@
+__pycache__/
+
+### DJANGO ###
+
+.env
+db.sqlite3
+/apps/media/
