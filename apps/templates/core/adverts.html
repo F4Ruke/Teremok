@@ -2,6 +2,14 @@
 
 {% block content %}
 
-<h1>Страница объявлений</h1>
+<ul>
+    {% for advert in adverts %}
+    <li>
+        <h2>{{ advert.title }}</h2>
+        <p>{{ advert.description }}</p>
+        <hr>
+    </li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
